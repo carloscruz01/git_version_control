@@ -1,0 +1,95 @@
+---
+title: "Comandos Git para Controle de Versão"
+author: "Carlos Cruz"
+date: "2022-11-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### **Pacotes utilizados:**
+```{r}
+library(knitr)
+library(usethis)
+```
+# **Git Commands**
+
+### **1. git clone**
+  Faz uma cópia de um repositório remoto(atualizado), no GitHub, e salva no computador(local). **Por exemplo:**
+```{Python}
+##Script em Python para clonar repositório remoto.
+def script():
+  condicao = True
+  while condicao:
+    comando = "git clone <https://link-com-o-nome-do-repositório>"
+    if comando != "":
+      print(comando)
+      condicao = False
+    else:
+      print('Erro na sintaxe.')
+script()
+```
+### **2. Git branch**
+  Comando utilizado para criar uma branch. Este comando é essencial, porquê dois ou mais desenvolvedores poderam trabalhar em um único projeto. *Obs: Talvez seja necessário apenas quando existe mais de 1 desenvolvedor.*. **Por exemplo:** 
+```{Python}
+## O script criará uma branch em meu local de trabalho.
+def script():
+  condicao = True
+  while condicao:
+    comando = 'git branch <nome-da-branch>'
+    if comando != '':
+      print(comando)
+      condicao = False
+    else:
+        print('Erro na sintaxe.')
+script()
+```
+### **3. git commit**
+  O comando irá apresentar um breve resumo sobre as alterações feitas no branch. __Por exemplo:__
+```{Python}
+## O script criará um commit. Porém, é preciso alterar as infos de alterações.
+def script():
+  condicao = True
+  while condicao:
+    comando = 'git commit -m "informações sobre alterações'
+    if comando != '':
+      print(comando)
+      condicao = False
+    else:
+        print('Erro na sintaxe.')
+script()
+```
+### 4. **git push** *Obs: Este comando transferirá commits da sua branch para a versão main.*
+  O comando irá enviar a branch para o repositório remote. *Obs: Talvez seja necessário apenas quando existe mais de 1 desenvolvedor.*
+**Por exemplo:**
+```{Python}
+## O script criará um push para o repositório remoto(GitHub)
+def script():
+  condicao = True
+  while condicao:
+    comando = 'git push -u <local-remoto> <nome-da-branch>'
+    if comando != '':
+      print(comando)
+      condicao = False
+    else:
+        print('Erro na sintaxe.')
+script()
+```
+### 5. **git pull**
+  O comando irá identificar as alterações feitas no repositório remoto e, assim, atualizar seu repositório local de acordo com as alterações feitas no repositório remoto. __Por exemplo:__
+```{Python}
+## O script atualizará seu repositório local de acordo com o repositório remoto.
+def script():
+  condicao = True
+  while condicao:
+    comando = 'git pull'
+    if comando != '':
+      print(comando)
+      condicao = False
+    else:
+        print('Erro na sintaxe.')
+script()
+```
+  
+  
